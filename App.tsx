@@ -4,8 +4,9 @@
  *
  * @format
  */
-
 import React from 'react';
+import './global.css';
+// import './test.css';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -43,6 +44,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
         {title}
       </Text>
       <Text
+        className=" bg-teal-500"
         style={[
           styles.sectionDescription,
           {
